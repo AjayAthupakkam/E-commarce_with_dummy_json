@@ -12,7 +12,15 @@ function CartListPage(){
 
 
 
-    return <div className="max-w-5xl mx-auto max-md:max-w-xl py-4">
+    return <div>
+        <div className="sticky top-0 bg-black text-white p-1 rounded-b-2xl z-50">
+      <div className="flex justify-between items-center max-w-6xl mx-auto text-white p-4">
+        <p className="font-extrabold tracking-widest cursor-pointer ">Pavani Store</p>
+         <a href="/cart-list">Cart<sup> {cartItems.length}</sup></a>
+      </div>
+    </div>
+    
+        <div className="max-w-5xl mx-auto max-md:max-w-xl py-4">
         <h1 className="text-2xl font-bold text-gray-800 text-center">
             My Cart Page
         </h1>
@@ -42,6 +50,7 @@ function CartListPage(){
             </div>
         </div>
 
+    </div>
     </div>
 }
 

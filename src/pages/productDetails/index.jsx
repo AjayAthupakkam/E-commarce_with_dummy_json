@@ -27,7 +27,15 @@ function ProductDetails() {
   if (loading) return <h2>Fetching Product Details...</h2>;
 
   return (
-    <div className="p-6 lg:max-w-7xl max-w-4xl mx-auto">
+    <div>
+      <div className="sticky top-0 bg-black text-white p-1 rounded-b-2xl z-50">
+      <div className="flex justify-between items-center max-w-6xl mx-auto text-white p-4">
+        <p className="font-extrabold tracking-widest cursor-pointer ">Pavani Store</p>
+         <a href="/cart-list">Cart<sup> {cartItems.length}</sup></a>
+      </div>
+    </div>
+  
+       <div className="p-6 lg:max-w-7xl max-w-4xl mx-auto">
       <div className="grid items-center grid-cols-1 lg:grid-cols-5 gap-12 shadow-sm p-6 ">
         <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
           <div className="px-4 py-10 rounded-xl shadow-lg relative">
@@ -70,6 +78,8 @@ function ProductDetails() {
             </div>
           </div>
       </div>
+    </div>
+
     </div>
   );
 }
