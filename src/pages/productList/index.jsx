@@ -2,7 +2,6 @@ import { useContext } from "react";
 import {ShoppingCartContext} from '../../context';
 import '../../App.css'
 import ProductItem from '../../components/productItem'
-import {useNavigate} from "react-router-dom";
 
 
 function ProductList(){
