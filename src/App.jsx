@@ -6,10 +6,8 @@ import ProductDetails from "./pages/productDetails";
 import CartListPage from "./pages/cartList";
 import Ordered from "./pages/ordered";
 import Welcome from "./pages/welcome";
-import { useNavigate } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate();
 
   return (
     <Fragment>
@@ -18,10 +16,9 @@ function App() {
         <Route path="/product-details/:id" element={<ProductDetails />} />
         <Route path="/cart-List" element={<CartListPage />} />
         <Route path="/ordered" element={<Ordered />} />
-        <Route path="/welcome" element={<Welcome />} />
+        <Route path="" element={<Welcome />} />
       </Routes>
-
-      <span><Welcome/></span>
+      
       
     </Fragment>
   );

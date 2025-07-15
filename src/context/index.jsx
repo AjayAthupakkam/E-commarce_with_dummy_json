@@ -69,7 +69,8 @@ function ShoppingCartProvider({children}){
 
     useEffect(()=>{
         fetchListOfProducts();
-        setCartItems(JSON.parse(localStorage.getItem('cartItems') || [] ))
+        const cartData = localStorage.getItem('cartItems');
+setCartItems(cartData ? JSON.parse(cartData) : []);
     },[])
 
     console.log(listOfProducts)
